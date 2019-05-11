@@ -1,0 +1,23 @@
+#
+spring:
+    datasource:
+      url: jdbc:mysql://127.0.0.1:3306/itheima95?useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+
+#  datasource.two:
+#    url: jdbc:mysql://127.0.0.1:3306/springboot2?useUnicode=true&characterEncoding=utf8
+#    one.username: root
+#    one.password: root
+#    one.driverClassName: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*Mapping.xml
+  type-aliases-package: springbootmb.demo.domain
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
